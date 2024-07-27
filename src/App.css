@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+   }
+   
+   body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+      'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:  url('../src/assets/02d.jpg');
+    background-size: cover;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 320px;
+  }
+  
+  .search-box button {
+    padding: 10px 20px;
+    background-color: #1d496a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    backdrop-filter: blur(40px);
+  
+  }
+  
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+  .error-msg {
+    color: #574242;
+    padding: 10vw;
+    font-size: 18px;
+  }
+  
+  .forecast-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .forecast-item {
+    padding: 10px;
+    backdrop-filter: blur(1.66666vw);
+    border-radius: 0.52083vw;
+    box-shadow: 0 0.15625vw 0.3125vw #a0ddfc29;
+    border: 1px solid #66727f;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-item .item-align {
+    text-align: left;
+    padding-left: 1vw;
+  }
+  
